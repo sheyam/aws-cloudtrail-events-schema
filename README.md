@@ -351,9 +351,11 @@ policies:
              url: s3://s3bucketname/AccountNumbers.csv
              format: csv2dict
 ```
+```
 Build the docker image with the below commands:
 docker build -t cloudtrail-schema .
 Create Alias to make it easier
 alias cloudtrail-schema="docker run  cloudtrail-schema"
 run any commands to container like below
 cloudtrail-schema iam.CreatePolicy.output
+```
